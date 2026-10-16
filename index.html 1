@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Flexbox Assignments</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f4fa;
+      color: #12264d;
+    }
+    header {
+      background: #1b2f5e;
+      color: #fff;
+      text-align: center;
+      padding: 20px 12px;
+    }
+    header h1 { margin: 0 0 6px; font-size: 1.6rem; }
+    header p { margin: 0; opacity: 0.85; }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 16px;
+    }
+    .card {
+      flex: 1 1 340px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin: 0;
+      padding: 10px 14px;
+      font-size: 1.05rem;
+      background: #2a5db0;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card h2 a {
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+    iframe {
+      width: 100%;
+      height: 420px;
+      border: 0;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Flexbox Assignments</h1>
+    <p>4 Projects &bull; Flexbox + Animation</p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>1. Colorful Boxes <a href="flexbox-workshop/">Open full page</a></h2>
+      <iframe src="flexbox-workshop/" title="Colorful Boxes"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>2. Pricing Plans <a href="flex-lab/">Open full page</a></h2>
+      <iframe src="flex-lab/" title="Pricing Plans"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>3. Animated Ferris Wheel <a href="animation-workshop/">Open full page</a></h2>
+      <iframe src="animation-workshop/" title="Animated Ferris Wheel"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>4. Moon Orbit Animation <a href="animation-lab/">Open full page</a></h2>
+      <iframe src="animation-lab/" title="Moon Orbit Animation"></iframe>
+    </div>
+  </div>
+</body>
+</html>
